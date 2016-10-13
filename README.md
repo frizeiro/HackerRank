@@ -1,3 +1,3 @@
 # HackerRank
 
-Repository for the solution of the challenges of the site hackerrank.com
+Repository for my solutions to some hackerrank.com challenges.
