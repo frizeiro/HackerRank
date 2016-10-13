@@ -14,6 +14,7 @@ public class Solution {
 		displayCurrency(new Locale("en", "IN"), payment);
 		displayCurrency(Locale.CHINA, payment);
 		displayCurrency(Locale.FRANCE, payment);
+		
 	}
 
 	static public void displayCurrency(Locale currentLocale, double payment) {
@@ -29,6 +30,7 @@ public class Solution {
 			displayName = currentLocale.getDisplayCountry(Locale.ENGLISH);
 
 		System.out.println(displayName + ": " + currencyFormatter.format(currencyAmount));
+		
 	}
 
 
