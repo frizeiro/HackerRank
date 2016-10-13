@@ -4,6 +4,7 @@ import java.util.*;
 public class Solution {
 
 	public static void main(String[] args) {
+		
 		Scanner in = new Scanner(System.in);
 		String s = in.next();
 		int k = in.nextInt();
@@ -25,5 +26,6 @@ public class Solution {
 
 		System.out.println(first);
 		System.out.println(last);
+		
 	}
 }
