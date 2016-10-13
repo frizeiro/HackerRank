@@ -7,6 +7,7 @@ public class Solution {
 		DoNotTerminate.forbidExit();
 
 		try {
+			
 			Scanner in = new Scanner(System.in);
 			int n = in.nextInt();
 			in.close();
@@ -19,8 +20,11 @@ public class Solution {
 			} else {
 				System.out.println("Wrong answer.");
 			}
+			
 		} catch (DoNotTerminate.ExitTrappedException e) {
+			
 			System.out.println("Unsuccessful Termination!!");
+			
 		}
 	}
 }
