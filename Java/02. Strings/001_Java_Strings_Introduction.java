@@ -12,9 +12,11 @@ public class Solution {
 		System.out.println(A.length() + B.length());
 		System.out.println(A.compareTo(B) > 0 ? "Yes" : "No");
 		System.out.println(capitalize(A) + " " + capitalize(B));
+		
 	}
 
 	public static String capitalize(String str) {
 		return str.substring(0, 1).toUpperCase() + str.substring(1);
 	}
+	
 }
