@@ -17,24 +17,22 @@ public class Solution {
 			}
 		}
 
-		int max = 0;
-		int out = 0;
-		for (int i = 0; i < 4; i++) {
-			for (int j = 0; j < 4; j++) {
-				out = sum(arr, i, j);
-				max = max > out ? max : out;
+		int max = -9 * 7; // if all hourglass numbers is -9
+		int sum;
+
+		for (int a = 0; a < 4; a++) {
+
+			for (int b = 0; b < 4; b++) {
+				sum = arr[a][b] + arr[a][b + 1] + arr[a][b + 2] + arr[a + 1][b + 1] + arr[a + 2][b] + arr[a + 2][b + 1] + arr[a + 2][b + 2];
+
+				if (sum > max)
+					max = sum;
 			}
+
 		}
 
 		System.out.println(max);
 
-	}
-
-	private static int sum(int[][] a, int i, int j) {
-		return
-				a[i][j]		+ a[i][j + 1]		+ a[i][j + 2]
-							+ a[i + 1][j + 1]
-			+ a[i + 2][j]	+ a[i + 2][j + 1]	+ a[i + 2][j + 2];
 	}
 
 }
